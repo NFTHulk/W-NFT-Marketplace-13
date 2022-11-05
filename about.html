@@ -1,0 +1,670 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<!-- Mirrored from www.gambolthemes.net/html-items/ukiyox-demo-link/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Nov 2022 07:26:02 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, shrink-to-fit=9">
+<meta name="description" content="Gambolthemes">
+<meta name="author" content="Gambolthemes">
+<title>UkiyoX - Create, sell or collect digital items secured with #blockchain</title>
+
+<link rel="icon" type="image/png" href="images/fav.png">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel='stylesheet'>
+<link href='vendor/unicons-2.0.1/css/unicons.css' rel='stylesheet'>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/dark-mode.css" rel="stylesheet">
+
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+</head>
+<body class="h-100">
+
+<div class="loader-container">
+<div class="loader-ripple">
+<div></div>
+<div></div>
+</div>
+</div>
+
+
+<div class="modal fade" id="passchangeModal" tabindex="-1" aria-labelledby="passchangeModalLabel" aria-modal="false" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="passchangeModalLabel">Change Password</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<div class="login-register-form">
+<div class="form-group position-relative">
+<label class="form-label">Current Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+<div class="form-group position-relative mt-4">
+<label class="form-label">New Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+<div class="form-group position-relative mt-4">
+<label class="form-label">Confirm Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+</div>
+<div class="pass-require">
+<span class="pass-require-title">Password requirements</span>
+<ul>
+<li>Must be at least 5 characters</li>
+<li>Must be fewer than 128 characters</li>
+<li>Must be different from email address</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn back-btn btn-hover h-40" data-bs-dismiss="modal">Back</button>
+<button class="btn main-btn btn-hover h-40" data-bs-dismiss="modal">Save</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-modal="false" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="signinModalLabel">Sign in to Ukiyox</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<div class="social-logins mt-0">
+<div class="row g-2">
+<div class="col-12">
+<button class="sign-social-btn sign-g-btn"><i class="fab fa-google"></i>Signin with Google</button>
+</div>
+<div class="col-4">
+<button class="sign-social-btn sign-f-btn"><i class="fab fa-facebook"></i></button>
+</div>
+<div class="col-4">
+<button class="sign-social-btn sign-t-btn"><i class="fab fa-twitter"></i></button>
+</div>
+<div class="col-4">
+<button class="sign-social-btn sign-a-btn"><i class="fab fa-linkedin-in"></i></button>
+</div>
+</div>
+</div>
+<div class="divider-line d-flex align-center">
+<hr class="v-divider line-color">
+<div class="or"><span>Or</span></div>
+<hr class="v-divider line-color">
+</div>
+<div class="login-register-form">
+<form>
+<div class="form-group position-relative">
+<input class="input-control" type="email" placeholder="Email Address">
+</div>
+<div class="form-group position-relative mt-3">
+<input class="input-control" type="password" placeholder="Password">
+</div>
+<button class="main-btn btn-hover w-100 h-40 mt-3" type="submit">Sign In</button>
+</form>
+<div class="sign-helpful-links">
+<a href="forgot_password.html" class="agent-link">I am an Agent</a>
+<a href="forgot_password.html" class="my-forgot-link">Forgot My Password?</a>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer justify-content-center">
+<div class="more-help-link">New to Ukiyox?<a href="#signupModal" role="button" data-bs-toggle="modal" data-bs-dismiss="modal">Sign up</a></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-modal="false" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="signupModalLabel">Sign up to Ukiyox</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<div class="login-register-form">
+<div class="sign-title mb-30">
+<p>Please fill out this form, and we'll send you a welcome email so you can verify your email address and sign in.</p>
+</div>
+<form>
+<div class="form-group position-relative">
+<input class="input-control" type="text" placeholder="Your Full Name">
+</div>
+<div class="form-group position-relative mt-3">
+<input class="input-control" type="email" placeholder="Email Address">
+</div>
+<button class="main-btn btn-hover w-100 h-40 mt-3" type="submit">Sign up</button>
+</form>
+</div>
+</div>
+</div>
+<div class="modal-footer justify-content-center">
+<div class="more-help-link">Already have account?<a href="#signinModal" role="button" data-bs-toggle="modal" data-bs-dismiss="modal">Sign in</a></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<header class="header clearfix">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="res_main_logo">
+<a href="index.html"><img src="images/footer_logo.svg" alt=""></a>
+</div>
+<div class="main_logo ms-0" id="logo">
+<a href="index.html"><img class="logo-main" src="images/logo.svg" alt=""></a>
+<a href="index.html"><img class="logo-inverse" src="images/dark_logo.svg" alt=""></a>
+</div>
+<div class="header_right ms-auto pe-0">
+<ul>
+<li></li>
+<li></li>
+<li>
+<a href="index.html" class="btn back--btn btn-hover me-2"><i class="uil uil-arrow-up-left me-1"></i>Back to home</a>
+</li>
+<li class="d-none">
+<a href="#signinModal" class="btn main-btn btn-hover me-3" role="button" data-bs-toggle="modal">Sign in</a>
+</li>
+<li class="dropdown">
+<a href="#" class="header-account" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+<span class="user-font">Joginer Singh</span>
+<img src="images/left-imgs/img-10.jpg" alt="avatar">
+</a>
+<ul class="dropdown-menu dropdown-menu-account dropdown-menu-end">
+<li><a class="dropdown-item" href="my_profile_detail_view_activity.html">My activities</a></li>
+<li><a class="dropdown-item" href="my_profile_detail_view.html">My profile</a></li>
+<li><a class="dropdown-item" href="#passchangeModal" role="button" data-bs-toggle="modal">Change password</a></li>
+<li>
+<div class="form-check form-switch">
+<label class="form-check-label" for="darkSwitch">Dark Mode</label>
+<input class="form-check-input" type="checkbox" id="darkSwitch">
+</div>
+</li>
+<li class="dropdown-menu-footer">
+<a class="dropdown-item text-center" href="sign_in.html">Sign out</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="new-wrapper d-flex flex-column h-100">
+<div class="sub-nav-group">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<nav class="sub-nav page-title-center">
+<div class="page-title">
+<h3>About Ukiyox</h3>
+</div>
+<ol class="breadcrumbs">
+<li title="Ukiyox">
+<a href="index.html">Ukiyox</a>
+</li>
+<li title="About">
+<a href="#">About</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="about-dt-block">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-10 col-md-12">
+<div class="dt-title">
+<h4>Meet Ukiyox</h4>
+<span>NFT marketplace where anything is possible and all are welcome</span>
+<img class="line-title" src="images/line.svg" alt="">
+</div>
+<div class="about-banner mt-30">
+<div class="play-banner-btn">
+<button class="play-btn btn-hover"><i class="fa-solid fa-play"></i></button>
+</div>
+<img src="images/about-us/banner.jpg" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="about-numbers-block">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12">
+<div class="dt-title">
+<h4>Ukiyox in numbers</h4>
+<span class="mb-2">NFT marketplace numbers speak</span>
+<img class="line-title" src="images/line.svg" alt="">
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="number-step">
+<div class="number-icon">
+<i class="uil uil-calender"></i>
+</div>
+<div class="number-text">
+<span class="number-count-text">2022</span>
+<span class="number-sub-text">Founded</span>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="number-step">
+<div class="number-icon">
+<i class="uil uil-usd-circle"></i>
+</div>
+<div class="number-text">
+<span class="number-count-text">$158M</span>
+<span class="number-sub-text">Trading volume</span>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="number-step">
+<div class="number-icon">
+<i class="uil uil-plus-circle"></i>
+</div>
+<div class="number-text">
+<span class="number-count-text">210K</span>
+<span class="number-sub-text">NFTs created</span>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="number-step">
+<div class="number-icon">
+<i class="uil uil-users-alt"></i>
+</div>
+<div class="number-text">
+<span class="number-count-text">1.6M</span>
+<span class="number-sub-text">Total users</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="about-team-block">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12">
+<div class="dt-title">
+<h4>Ukiyox Team</h4>
+<span class="mb-2">Meet our amazing team</span>
+<img class="line-title" src="images/line.svg" alt="">
+</div>
+</div>
+<div class="col-lg-12 col-md-12">
+<div class="team-group">
+<div class="owl-carousel team-slider owl-theme">
+<div class="item">
+<div class="main-card team-card">
+<div class="team-img">
+<img src="images/about-us/team-1.jpg" alt="">
+</div>
+<div class="about-team-dt">
+<div class="team-text">
+<h4>John Doe</h4>
+<span>CEO, Director</span>
+</div>
+<ul class="team-social-icons">
+<li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="main-card team-card">
+<div class="team-img">
+<img src="images/about-us/team-2.jpg" alt="">
+</div>
+<div class="about-team-dt">
+<div class="team-text">
+<h4>Alex Salnikov</h4>
+<span>CPO</span>
+</div>
+<ul class="team-social-icons">
+<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="main-card team-card">
+<div class="team-img">
+<img src="images/about-us/team-3.jpg" alt="">
+</div>
+<div class="about-team-dt">
+<div class="team-text">
+<h4>Masha Vyazemskaya</h4>
+<span>CTO</span>
+</div>
+<ul class="team-social-icons">
+<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="main-card team-card">
+<div class="team-img">
+<img src="images/about-us/team-4.jpg" alt="">
+</div>
+<div class="about-team-dt">
+<div class="team-text">
+<h4>Eugene Nacu</h4>
+<span>VP Communications</span>
+</div>
+<ul class="team-social-icons">
+<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="main-card team-card">
+<div class="team-img">
+<img src="images/about-us/team-5.jpg" alt="">
+</div>
+<div class="about-team-dt">
+<div class="team-text">
+<h4>Ilya Komolkin</h4>
+<span>Head of Design</span>
+</div>
+<ul class="team-social-icons">
+<li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="main-card team-card">
+<div class="team-img">
+<img src="images/about-us/team-6.jpg" alt="">
+</div>
+<div class="about-team-dt">
+<div class="team-text">
+<h4>Sunil Singhvi</h4>
+<span>CBDO</span>
+</div>
+<ul class="team-social-icons">
+<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="main-card team-card">
+<div class="team-img">
+<img src="images/about-us/team-7.jpg" alt="">
+</div>
+<div class="about-team-dt">
+<div class="team-text">
+<h4>Nass Diba</h4>
+<span>VP Product</span>
+</div>
+<ul class="team-social-icons">
+<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="join-btn">
+<a href="#" class="btn main-btn btn-hover">Join us!</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="about-press-block">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12">
+<div class="dt-title">
+<h4>Ukiyox In Press</h4>
+<span class="mb-2">You might have read about us in the news</span>
+<img class="line-title" src="images/line.svg" alt="">
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="main-card press-card mt-30">
+<div class="press-top">
+<a href="#" class="press-author-dt">
+<div class="press-author-img">
+<img src="images/left-imgs/img-15.jpg" alt="">
+</div>
+<div class="press-author-name">
+<h4>Ukiyox</h4>
+</div>
+</a>
+</div>
+<div class="press-img">
+<img src="images/about-us/press-1.jpg" alt="">
+</div>
+<div class="press-text">
+<a href="#" class="press-title-link">NFT marketplace startup Ukiyox closes $1.2 million Series A</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="main-card press-card mt-30">
+<div class="press-top">
+<a href="#" class="press-author-dt">
+<div class="press-author-img">
+<img src="images/left-imgs/img-15.jpg" alt="">
+</div>
+<div class="press-author-name">
+<h4>Ukiyox</h4>
+</div>
+</a>
+</div>
+<div class="press-img">
+<img src="images/about-us/press-2.jpg" alt="">
+</div>
+<div class="press-text">
+<a href="#" class="press-title-link">Twitter Drops Collection of 140 Ethereum NFTs on Ukiyox</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="main-card press-card mt-30">
+<div class="press-top">
+<a href="#" class="press-author-dt">
+<div class="press-author-img">
+<img src="images/left-imgs/img-15.jpg" alt="">
+</div>
+<div class="press-author-name">
+<h4>Ukiyox</h4>
+</div>
+</a>
+</div>
+<div class="press-img">
+<img src="images/about-us/press-3.jpg" alt="">
+</div>
+<div class="press-text">
+<a href="#" class="press-title-link">The biggest moves in NFTs, Bitcoin, crypto rules</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="main-card press-card mt-30">
+<div class="press-top">
+<a href="#" class="press-author-dt">
+<div class="press-author-img">
+<img src="images/left-imgs/img-15.jpg" alt="">
+</div>
+<div class="press-author-name">
+<h4>Ukiyox</h4>
+</div>
+</a>
+</div>
+<div class="press-img">
+<img src="images/about-us/press-4.jpg" alt="">
+</div>
+<div class="press-text">
+<a href="#" class="press-title-link">NFT Site Ukiyox to Launch Marketplace on Flow Blockchain Following $2.2M Funding Round</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer mt-auto">
+<div class="footer_top">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Ukiyox</h4>
+<ul class="footer-content-links">
+<li><a href="explore.html" class="footer-link">Explore</a></li>
+<li><a href="about.html" class="footer-link">About</a></li>
+<li><a href="help_center.html" class="footer-link">Help Center</a></li>
+<li><a href="career-2.html" class="footer-link">Careers</a></li>
+<li><a href="how_it_works.html" class="footer-link">How It Works</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Community</h4>
+<ul class="footer-content-links">
+<li><a href="blogs.html" class="footer-link">Blog</a></li>
+<li><a href="uki_token.html" class="footer-link">Uki Token</a></li>
+<li><a href="suggest_features.html" class="footer-link">Suggest Features</a></li>
+<li><a href="subscribe.html" class="footer-link">Subscribe</a></li>
+<li><a href="voting.html" class="footer-link">Voting</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Join Ukiyox Community</h4>
+<div class="footer-social-links">
+<a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-discord"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-reddit"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-vk"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-tumblr-square"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-medium"></i></a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Download the Ukiyox app</h4>
+<div class="footer-download-links">
+<a href="#" class="download-btn">
+<img src="images/career/app-store.png" alt="">
+</a>
+<a href="#" class="download-btn">
+<img src="images/career/google-play.png" alt="">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_middle">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-4 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title txt-center">Get the latest Ukiyox updates</h4>
+<div class="footer-updates">
+<div class="subscribe-email-group">
+<input class="input-control" type="email" placeholder="Your e-mail">
+<button class="subscribe-btn btn-hover" type="submit">I'm in</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_bottom">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<ul class="footer_left">
+<li>
+<div class="footer_logo">
+<a href="index.html"><img src="images/footer_logo.svg" alt=""></a>
+</div>
+</li>
+<li>
+<p><i class="uil uil-copyright"></i> 2022 <strong>Ukiyox</strong>. All Rights Reserved.</p>
+</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul class="footer_bottom_links">
+<li>
+<a href="privacy_policy.html">Privacy Policy</a>
+</li>
+<li>
+<a href="terms.html">Terms</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/OwlCarousel/owl.carousel.js"></script>
+<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/dark-mode-switch.min.js"></script>
+</body>
+
+<!-- Mirrored from www.gambolthemes.net/html-items/ukiyox-demo-link/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Nov 2022 07:26:17 GMT -->
+</html>

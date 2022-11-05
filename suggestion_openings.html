@@ -1,0 +1,556 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<!-- Mirrored from www.gambolthemes.net/html-items/ukiyox-demo-link/suggestion_openings.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Nov 2022 07:26:45 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, shrink-to-fit=9">
+<meta name="description" content="Gambolthemes">
+<meta name="author" content="Gambolthemes">
+<title>UkiyoX - Create, sell or collect digital items secured with #blockchain</title>
+
+<link rel="icon" type="image/png" href="images/fav.png">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel='stylesheet'>
+<link href='vendor/unicons-2.0.1/css/unicons.css' rel='stylesheet'>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/dark-mode.css" rel="stylesheet">
+
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+</head>
+<body class="h-100">
+
+<div class="loader-container">
+<div class="loader-ripple">
+<div></div>
+<div></div>
+</div>
+</div>
+
+
+<div class="modal fade" id="passchangeModal" tabindex="-1" aria-labelledby="passchangeModalLabel" aria-modal="false" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="passchangeModalLabel">Change Password</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<div class="login-register-form">
+<div class="form-group position-relative">
+<label class="form-label">Current Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+<div class="form-group position-relative mt-4">
+<label class="form-label">New Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+<div class="form-group position-relative mt-4">
+<label class="form-label">Confirm Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+</div>
+<div class="pass-require">
+<span class="pass-require-title">Password requirements</span>
+<ul>
+<li>Must be at least 5 characters</li>
+<li>Must be fewer than 128 characters</li>
+<li>Must be different from email address</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn back-btn btn-hover h-40" data-bs-dismiss="modal">Back</button>
+<button class="btn main-btn btn-hover h-40" data-bs-dismiss="modal">Save</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="SettingModal" tabindex="-1" aria-labelledby="settingModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="settingModalLabel">Setting</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<form>
+<div class="form-group position-relative">
+<div class="choose-img-block">
+<div class="choose-img">
+<img src="images/left-imgs/img-16.jpg" alt="">
+</div>
+<div class="choose-item-dts">
+<p>We recommend an image of at least 300x300. Gifs work too. Max 5mb.</p>
+<div class="upload-btn-wrapper">
+<input class="uploadBtn-main-input" type="file" id="add_avatar">
+<label for="add_avatar" title="img">Upload Image</label>
+</div>
+</div>
+</div>
+</div>
+<div class="form-group position-relative mt_2">
+<label for="full_name" class="form-label">Name*</label>
+<input class="input-control" type="text" id="full_name" value="Joginder Singh" placeholder="Enter your name">
+</div>
+<div class="form-group mt_2">
+<label for="email_id" class="form-label">Email*</label>
+<div class="position-relative">
+<input class="input-control" type="email" id="email_id" value="gambol943@gmail.com" placeholder="Enter your email">
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn main-btn btn-hover w-100 h-40" data-bs-toggle="modal" data-bs-dismiss="modal">Save Changes</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<header class="header clearfix">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="res_main_logo">
+<a href="index.html"><img src="images/footer_logo.svg" alt=""></a>
+</div>
+<div class="main_logo ms-0" id="logo">
+<a href="index.html"><img class="logo-main" src="images/logo.svg" alt=""></a>
+<a href="index.html"><img class="logo-inverse" src="images/dark_logo.svg" alt=""></a>
+</div>
+<div class="header_right ms-auto pe-0">
+<ul>
+<li></li>
+<li></li>
+<li>
+<a href="index.html" class="btn back--btn btn-hover me-2"><i class="uil uil-arrow-up-left me-1"></i>Back to home</a>
+</li>
+<li class="d-none">
+<a href="#signinModal" class="btn main-btn btn-hover me-3" role="button" data-bs-toggle="modal">Sign in</a>
+</li>
+<li class="dropdown">
+<a href="#" class="header-account" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+<span class="user-font">Joginer Singh</span>
+<img src="images/left-imgs/img-10.jpg" alt="avatar">
+</a>
+<ul class="dropdown-menu dropdown-menu-account dropdown-menu-end">
+<li><a class="dropdown-item" href="my_profile_detail_view_activity.html">My activities</a></li>
+<li><a class="dropdown-item" href="my_profile_detail_view.html">My profile</a></li>
+<li><a class="dropdown-item" href="#SettingModal" role="button" data-bs-toggle="modal">Setting</a></li>
+<li><a class="dropdown-item" href="#passchangeModal" role="button" data-bs-toggle="modal">Change password</a></li>
+<li>
+<div class="form-check form-switch">
+<label class="form-check-label" for="darkSwitch">Dark Mode</label>
+<input class="form-check-input" type="checkbox" id="darkSwitch">
+</div>
+</li>
+<li class="dropdown-menu-footer">
+<a class="dropdown-item text-center" href="sign_in.html">Sign out</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="new-wrapper d-flex flex-column h-100">
+<div class="sub-nav-group">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<nav class="sub-nav page-title-center">
+<div class="page-title">
+<h3>Suggest Features</h3>
+</div>
+<ol class="breadcrumbs">
+<li><a href="index.html">Home</a></li>
+<li><a href="suggest_features.html">Suggest Features</a></li>
+<li aria-current="page">Suggestion Openings</li>
+</ol>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="suggestion-top-block">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12">
+<a href="suggest_features.html" class="back-link">
+<i class="uil uil-arrow-circle-left me-1"></i>Back to roadmap
+</a>
+<div class="suggest_features-title">
+<h2>Website</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="suggest-opening-block">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-12">
+<div class="main-card">
+<div class="create-post">
+<div class="create-post-top">
+<h4 class="item-title mb-0">Create a Post</h4>
+</div>
+<div class="create-post-body">
+<div class="group-block">
+<label class="form-label">Title*</label>
+<input class="input-control" type="text" placeholder="Short, descriptive title">
+</div>
+<div class="group-block mt_2">
+<label class="form-label">Details*</label>
+<textarea class="textarea-control ht-100" placeholder="Any additional details…"></textarea>
+</div>
+<div class="group-block mt_2">
+<label class="form-label">Image*</label>
+<div class="upload-dropzone">
+<input type="file">
+<span><i class="uil uil-image-plus"></i></span>
+</div>
+</div>
+</div>
+<div class="create-post-bottom">
+<button class="main-btn btn-hover w-100 h-40" type="submit">Create Post</button>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-8 col-md-12">
+<div class="suggestion-filter">
+<div class="left-filter">
+<div class="sort-text">Showing</div>
+<div class="filter-selection main-from">
+<select class="selectpicker" title="Sort" data-size="5">
+<option value="trending" selected>Trending</option>
+<option value="top">Top</option>
+<option value="underreview">Under Review</option>
+<option value="planned">Planned</option>
+<option value="progress">In progress</option>
+<option value="complete">Complete</option>
+<option value="own">My Own</option>
+</select>
+</div>
+<div class="text">posts</div>
+</div>
+<div class="right-filter">
+<div class="form-group position-relative">
+<input class="input-control ps-5" type="email" placeholder="Search ">
+<i class="uil uil-search picon-position"></i>
+</div>
+</div>
+</div>
+<div class="main-card mt-30">
+<div class="suggest-posts">
+<div class="roadmap-posts">
+<div class="roadmap-list-item road-mr">
+<div class="roadmap-votes">
+<div class="upvote"></div>
+<span>22</span>
+</div>
+<a href="#" class="post-link">
+<div class="post-body">
+<div class="postTitle">
+<span class="rpost-title">Metadata Refresh</span>
+</div>
+<span class="post-status">in progress</span>
+<p class="post-details trun-cate">Ability to refresh metadata</p>
+</div>
+<div class="post-comment-count">
+<span class="icon-comment">
+<i class="uil uil-comment-alt"></i>
+</span>
+<span>15</span>
+</div>
+</a>
+</div>
+<div class="roadmap-list-item road-mr">
+<div class="roadmap-votes">
+<div class="upvote"></div>
+<span>35</span>
+</div>
+<a href="#" class="post-link">
+<div class="post-body">
+<div class="postTitle">
+<span class="rpost-title">NFTs New Free</span>
+</div>
+<p class="post-details trun-cate">NFTs New and free, don't miss the chance</p>
+</div>
+<div class="post-comment-count">
+<span class="icon-comment">
+<i class="uil uil-comment-alt"></i>
+</span>
+<span>10</span>
+</div>
+</a>
+</div>
+<div class="roadmap-list-item road-mr">
+<div class="roadmap-votes">
+<div class="upvote"></div>
+<span>26</span>
+</div>
+<a href="#" class="post-link">
+<div class="post-body">
+ <div class="postTitle">
+<span class="rpost-title">Hide burned tokens</span>
+</div>
+<p class="post-details trun-cate">Burned tokens still appear in the collection view. That clogs the portal unnecessarily.</p>
+</div>
+<div class="post-comment-count">
+<span class="icon-comment">
+<i class="uil uil-comment-alt"></i>
+</span>
+<span>18</span>
+</div>
+</a>
+</div>
+<div class="roadmap-list-item road-mr">
+<div class="roadmap-votes">
+<div class="upvote"></div>
+<span>28</span>
+</div>
+<a href="#" class="post-link">
+<div class="post-body">
+<div class="postTitle">
+<span class="rpost-title">Viewer count</span>
+</div>
+<p class="post-details trun-cate">There needs to be a way that you can confirm how many times your NFT has been viewed. At this point I have four NFTs for sale but have absolutely no idea if a single person has viewed them.</p>
+</div>
+<div class="post-comment-count">
+<span class="icon-comment">
+<i class="uil uil-comment-alt"></i>
+</span>
+<span>25</span>
+</div>
+</a>
+</div>
+<div class="roadmap-list-item road-mr">
+<div class="roadmap-votes">
+<div class="upvote"></div>
+<span>15</span>
+</div>
+<a href="#" class="post-link">
+<div class="post-body">
+<div class="postTitle">
+<span class="rpost-title">Hide from Created</span>
+</div>
+<p class="post-details trun-cate">Could we please have an option of hiding items from “Created” (not just from “Owned”). Ukiyox has this. Thanks!</p>
+</div>
+<div class="post-comment-count">
+<span class="icon-comment">
+<i class="uil uil-comment-alt"></i>
+</span>
+<span>0</span>
+</div>
+</a>
+</div>
+<div class="roadmap-list-item road-mr">
+<div class="roadmap-votes">
+<div class="upvote"></div>
+<span>19</span>
+</div>
+<a href="#" class="post-link">
+<div class="post-body">
+<div class="postTitle">
+<span class="rpost-title">Coupons for Items</span>
+</div>
+<p class="post-details trun-cate">I'd like to issue coupons for purchasing my NFTs at a discount rate as a promotional. So please enable store-like features for collections.</p>
+</div>
+<div class="post-comment-count">
+<span class="icon-comment">
+<i class="uil uil-comment-alt"></i>
+</span>
+<span>15</span>
+</div>
+</a>
+</div>
+<div class="roadmap-list-item road-mr">
+<div class="roadmap-votes">
+<div class="upvote"></div>
+<span>27</span>
+</div>
+<a href="#" class="post-link">
+<div class="post-body">
+<div class="postTitle">
+<span class="rpost-title">unlockable on secondary market</span>
+</div>
+<p class="post-details trun-cate">What is the behavior of unlockable on secondary market?</p>
+</div>
+<div class="post-comment-count">
+<span class="icon-comment">
+<i class="uil uil-comment-alt"></i>
+</span>
+<span>12</span>
+</div>
+</a>
+</div>
+<div class="roadmap-list-item road-mr">
+<div class="roadmap-votes">
+<div class="upvote"></div>
+<span>31</span>
+</div>
+<a href="#" class="post-link">
+<div class="post-body">
+<div class="postTitle">
+<span class="rpost-title">Fix Profile level Activity</span>
+</div>
+<p class="post-details trun-cate">When clicking on Activity tab in a Profile page, general activity is shown instead of profile level one.</p>
+</div>
+<div class="post-comment-count">
+<span class="icon-comment">
+<i class="uil uil-comment-alt"></i>
+</span>
+<span>28</span>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center">
+<button class="main-btn btn-hover h-40 mt-5">Load More</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer mt-auto">
+<div class="footer_top">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Ukiyox</h4>
+<ul class="footer-content-links">
+<li><a href="explore.html" class="footer-link">Explore</a></li>
+<li><a href="about.html" class="footer-link">About</a></li>
+<li><a href="help_center.html" class="footer-link">Help Center</a></li>
+<li><a href="career-2.html" class="footer-link">Careers</a></li>
+<li><a href="how_it_works.html" class="footer-link">How It Works</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Community</h4>
+<ul class="footer-content-links">
+<li><a href="blogs.html" class="footer-link">Blog</a></li>
+<li><a href="uki_token.html" class="footer-link">Uki Token</a></li>
+<li><a href="suggest_features.html" class="footer-link">Suggest Features</a></li>
+<li><a href="subscribe.html" class="footer-link">Subscribe</a></li>
+<li><a href="voting.html" class="footer-link">Voting</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Join Ukiyox Community</h4>
+<div class="footer-social-links">
+<a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-discord"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-reddit"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-vk"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-tumblr-square"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-medium"></i></a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Download the Ukiyox app</h4>
+<div class="footer-download-links">
+<a href="#" class="download-btn">
+<img src="images/career/app-store.png" alt="">
+</a>
+<a href="#" class="download-btn">
+<img src="images/career/google-play.png" alt="">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_middle">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-4 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title txt-center">Get the latest Ukiyox updates</h4>
+<div class="footer-updates">
+<div class="subscribe-email-group">
+<input class="input-control" type="email" placeholder="Your e-mail">
+<button class="subscribe-btn btn-hover" type="submit">I'm in</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_bottom">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<ul class="footer_left">
+ <li>
+<div class="footer_logo">
+<a href="index.html"><img src="images/footer_logo.svg" alt=""></a>
+</div>
+</li>
+<li>
+<p><i class="uil uil-copyright"></i> 2022 <strong>Ukiyox</strong>. All Rights Reserved.</p>
+</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul class="footer_bottom_links">
+<li>
+<a href="privacy_policy.html">Privacy Policy</a>
+</li>
+<li>
+<a href="terms.html">Terms</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/OwlCarousel/owl.carousel.js"></script>
+<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/dark-mode-switch.min.js"></script>
+</body>
+
+<!-- Mirrored from www.gambolthemes.net/html-items/ukiyox-demo-link/suggestion_openings.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Nov 2022 07:26:46 GMT -->
+</html>

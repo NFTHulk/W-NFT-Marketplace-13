@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<!-- Mirrored from www.gambolthemes.net/html-items/ukiyox-demo-link/privacy_policy.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Nov 2022 07:26:58 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, shrink-to-fit=9">
+<meta name="description" content="Gambolthemes">
+<meta name="author" content="Gambolthemes">
+<title>UkiyoX - Create, sell or collect digital items secured with #blockchain</title>
+
+<link rel="icon" type="image/png" href="images/fav.png">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel='stylesheet'>
+<link href='vendor/unicons-2.0.1/css/unicons.css' rel='stylesheet'>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/dark-mode.css" rel="stylesheet">
+
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+</head>
+<body class="h-100">
+
+<div class="loader-container">
+<div class="loader-ripple">
+<div></div>
+<div></div>
+</div>
+</div>
+
+
+<div class="modal fade" id="passchangeModal" tabindex="-1" aria-labelledby="passchangeModalLabel" aria-modal="false" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="passchangeModalLabel">Change Password</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<div class="login-register-form">
+<div class="form-group position-relative">
+<label class="form-label">Current Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+<div class="form-group position-relative mt-4">
+<label class="form-label">New Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+<div class="form-group position-relative mt-4">
+<label class="form-label">Confirm Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+</div>
+<div class="pass-require">
+<span class="pass-require-title">Password requirements</span>
+<ul>
+<li>Must be at least 5 characters</li>
+<li>Must be fewer than 128 characters</li>
+<li>Must be different from email address</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn back-btn btn-hover h-40" data-bs-dismiss="modal">Back</button>
+<button class="btn main-btn btn-hover h-40" data-bs-dismiss="modal">Save</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-modal="false" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="signinModalLabel">Sign in to Ukiyox</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<div class="social-logins mt-0">
+<div class="row g-2">
+<div class="col-12">
+<button class="sign-social-btn sign-g-btn"><i class="fab fa-google"></i>Signin with Google</button>
+</div>
+<div class="col-4">
+<button class="sign-social-btn sign-f-btn"><i class="fab fa-facebook"></i></button>
+</div>
+<div class="col-4">
+<button class="sign-social-btn sign-t-btn"><i class="fab fa-twitter"></i></button>
+</div>
+<div class="col-4">
+<button class="sign-social-btn sign-a-btn"><i class="fab fa-linkedin-in"></i></button>
+</div>
+</div>
+</div>
+<div class="divider-line d-flex align-center">
+<hr class="v-divider line-color">
+<div class="or"><span>Or</span></div>
+<hr class="v-divider line-color">
+</div>
+<div class="login-register-form">
+<form>
+<div class="form-group position-relative">
+<input class="input-control" type="email" placeholder="Email Address">
+</div>
+<div class="form-group position-relative mt-3">
+<input class="input-control" type="password" placeholder="Password">
+</div>
+<button class="main-btn btn-hover w-100 h-40 mt-3" type="submit">Sign In</button>
+</form>
+<div class="sign-helpful-links">
+<a href="forgot_password.html" class="agent-link">I am an Agent</a>
+<a href="forgot_password.html" class="my-forgot-link">Forgot My Password?</a>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer justify-content-center">
+<div class="more-help-link">New to Ukiyox?<a href="#signupModal" role="button" data-bs-toggle="modal" data-bs-dismiss="modal">Sign up</a></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-modal="false" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="signupModalLabel">Sign up to Ukiyox</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<div class="login-register-form">
+<div class="sign-title mb-30">
+<p>Please fill out this form, and we'll send you a welcome email so you can verify your email address and sign in.</p>
+</div>
+<form>
+<div class="form-group position-relative">
+<input class="input-control" type="text" placeholder="Your Full Name">
+</div>
+<div class="form-group position-relative mt-3">
+<input class="input-control" type="email" placeholder="Email Address">
+</div>
+<button class="main-btn btn-hover w-100 h-40 mt-3" type="submit">Sign up</button>
+</form>
+</div>
+</div>
+</div>
+<div class="modal-footer justify-content-center">
+<div class="more-help-link">Already have account?<a href="#signinModal" role="button" data-bs-toggle="modal" data-bs-dismiss="modal">Sign in</a></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<header class="header clearfix">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="res_main_logo">
+<a href="index.html"><img src="images/footer_logo.svg" alt=""></a>
+</div>
+<div class="main_logo ms-0" id="logo">
+<a href="index.html"><img class="logo-main" src="images/logo.svg" alt=""></a>
+<a href="index.html"><img class="logo-inverse" src="images/dark_logo.svg" alt=""></a>
+</div>
+<div class="header_right ms-auto pe-0">
+<ul>
+<li></li>
+<li></li>
+<li>
+<a href="index.html" class="btn back--btn btn-hover me-2"><i class="uil uil-arrow-up-left me-1"></i>Back to home</a>
+</li>
+<li class="d-none">
+<a href="#signinModal" class="btn main-btn btn-hover me-3" role="button" data-bs-toggle="modal">Sign in</a>
+</li>
+<li class="dropdown">
+<a href="#" class="header-account" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+<span class="user-font">Joginer Singh</span>
+<img src="images/left-imgs/img-10.jpg" alt="avatar">
+</a>
+<ul class="dropdown-menu dropdown-menu-account dropdown-menu-end">
+<li><a class="dropdown-item" href="my_profile_detail_view_activity.html">My activities</a></li>
+<li><a class="dropdown-item" href="my_profile_detail_view.html">My profile</a></li>
+<li><a class="dropdown-item" href="#passchangeModal" role="button" data-bs-toggle="modal">Change password</a></li>
+<li>
+<div class="form-check form-switch">
+<label class="form-check-label" for="darkSwitch">Dark Mode</label>
+<input class="form-check-input" type="checkbox" id="darkSwitch">
+</div>
+</li>
+<li class="dropdown-menu-footer">
+<a class="dropdown-item text-center" href="sign_in.html">Sign out</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="new-wrapper d-flex flex-column h-100">
+<div class="sub-nav-group">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<nav class="sub-nav page-title-center">
+<div class="page-title">
+<h3>Privacy Policy</h3>
+</div>
+<ol class="breadcrumbs">
+<li title="Ukiyox">
+<a href="index.html">Ukiyox</a>
+</li>
+<li title="Privacy Policy">
+<a href="#">Privacy Policy</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="privacy-term-block">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="pt-step">
+<h4>Information Collection</h4>
+<p>Maecenas non sem ex. Nullam ac augue vel turpis fringilla maximus. Vivamus commodo laoreet augue non porta. Nam egestas dui turpis, non pulvinar nisi rhoncus eu. Phasellus et sollicitudin nulla, at efficitur nunc. Quisque et neque commodo, blandit lacus malesuada, scelerisque ante. Suspendisse lacinia tristique justo, vitae ornare ipsum interdum sed. Vestibulum porttitor urna eget nunc porttitor rutrum. Aliquam tempor sapien orci, quis mollis velit laoreet sit amet. Morbi luctus magna tellus, quis accumsan nisi cursus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius convallis massa, sed ultrices dolor fermentum id. Nunc vel ex sed sapien hendrerit consequat pharetra a metus Etiam placerat ac turpis ac feugiat consequat sed mi in, consectetur posuere erat. Ut mauris arcu, finibus quis lectus et, hendrerit.</p>
+<p>Vestibulum eu aliquet justo. Aenean at mauris leo. Etiam placerat ac turpis ac feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce velit nibh, consequat sed mi in, consectetur posuere erat. Ut mauris arcu, finibus quis lectus et, hendrerit rutrum erat. Integer varius pharetra arcu, et rhoncus leo commodo sed. Nullam sollicitudin pulvinar pharetra. In ut lacinia sem.</p>
+</div>
+<div class="pt-step">
+<h4>Privacy Policy Ukiyox</h4>
+<p>Pellentesque eget volutpat tellus. Ut sem odio, tempus et imperdiet pulvinar, finibus quis libero. Quisque nisi nisl, consectetur ac suscipit in, pharetra et libero. Sed faucibus sapien nisl, sit amet pellentesque lectus euismod et. Nam in odio placerat risus tempor faucibus. Duis pharetra magna vitae dui mattis, eget consequat felis fringilla. Suspendisse at finibus libero. Curabitur nec risus neque. Donec lacinia arcu id lectus tempus, vel condimentum nisl finibus. Pellentesque finibus quis libero et vestibulum. Vestibulum scelerisque diam sit amet elit porttitor, at semper elit venenatis.</p>
+<p>Aenean eleifend vel augue nec rutrum. Fusce id magna ac urna interdum vulputate non consequat risus. Maecenas augue nisl, eleifend ultrices auctor sit amet, tincidunt non purus. Vestibulum eros lacus, mollis a libero suscipit, fermentum auctor lectus. Nam mauris dolor, tempus non rhoncus vel, facilisis eleifend augue. In vulputate risus augue, in rutrum arcu consectetur facilisis. Duis ex lectus, pulvinar a dolor ut, aliquam interdum ipsum.</p>
+</div>
+<div class="pt-step">
+<h4>The Collection, Process and Use of Personal Data</h4>
+<p>Integer a sem sed massa tincidunt dapibus id nec sem. Sed tempor quam nec nunc volutpat, sit amet porta lorem finibus. Suspendisse enim leo, sodales vitae posuere sit amet, lacinia quis erat. Mauris ipsum diam, blandit at tristique a, luctus eget urna. Nullam fermentum velit id leo bibendum euismod. Ut ac quam consectetur, pulvinar diam nec, posuere libero. Proin ullamcorper finibus sem, et elementum lorem porta sed. Aenean convallis urna magna, nec dapibus purus scelerisque non.</p>
+<p>Nullam nibh sapien, rutrum a egestas in, eleifend id magna. Nunc sapien mauris, malesuada ac mattis eget, finibus sit amet tortor. Duis rutrum eros a magna aliquet semper. Suspendisse nibh orci, suscipit ut elit nec, placerat rhoncus nibh. Mauris ut tincidunt quam, ut rhoncus leo.</p>
+</div>
+<div class="pt-step">
+<h4>Disclaimers</h4>
+<p>Fusce in quam vel quam congue accumsan. Cras venenatis dapibus sapien, et lobortis nibh ullamcorper eget. Praesent lacinia sapien a feugiat pretium. Vivamus at dui metus. Fusce interdum ante velit, eget semper velit placerat sed. Vestibulum molestie tortor ut interdum efficitur. Nunc orci lacus, facilisis eget nisi et, fermentum finibus nunc. Phasellus id sapien nibh. In id lacus eu mauris interdum gravida et id ante. Aenean eleifend vel augue nec rutrum. Fusce id magna ac urna interdum vulputate non consequat risus. Maecenas augue nisl, eleifend ultrices auctor sit amet, tincidunt non purus. Vestibulum eros lacus, mollis a libero suscipit, fermentum auctor lectus. Nam mauris dolor, tempus non rhoncus vel, facilisis eleifend augue. In vulputate risus augue, in rutrum arcu consectetur facilisis. Duis ex lectus, pulvinar a dolor ut, aliquam interdum ipsum.</p>
+</div>
+<div class="pt-step">
+<h4>Data Protection</h4>
+<p>Nullam nibh sapien, rutrum a egestas in, eleifend id magna. Nunc sapien mauris, malesuada ac mattis eget, finibus sit amet tortor. Duis rutrum eros a magna aliquet semper. Suspendisse nibh orci, suscipit ut elit nec, placerat rhoncus nibh. Mauris ut tincidunt quam, ut rhoncus leo. Vivamus dignissim sem eget placerat venenatis. Nunc lacinia leo vitae dui semper molestie. Praesent leo nibh, molestie ut pellentesque id, ullamcorper non ex. Aenean vitae semper eros, in blandit neque. Aenean ullamcorper enim quis felis maximus euismod.</p>
+<p>Nam in odio placerat risus tempor faucibus. Duis pharetra magna vitae dui mattis, eget consequat felis fringilla. Suspendisse at finibus libero. Curabitur nec risus neque. Donec lacinia arcu id lectus tempus, vel condimentum nisl finibus. Pellentesque finibus quis libero et vestibulum. Vestibulum scelerisque diam sit amet elit porttitor, at semper elit venenatis.</p>
+</div>
+<div class="pt-step">
+<h4>How We Use Cookies</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at lacinia velit, id sagittis neque. Vestibulum sed tempus velit. Sed in purus rutrum, accumsan ex sed, tempus lacus. Praesent fringilla non nibh eget tristique. Quisque ex sem, posuere vitae nisi ac, lobortis dictum ante. In sed consectetur justo. Etiam maximus rutrum urna. Proin vel justo risus. Fusce eu dolor velit. Ut nec lorem a magna fermentum dictum.</p>
+</div>
+<div class="pt-step">
+<h4>The Collection, Process, and Use of Personal Data</h4>
+<p>Pellentesque eget volutpat tellus. Ut sem odio, tempus et imperdiet pulvinar, finibus quis libero. Quisque nisi nisl, consectetur ac suscipit in, pharetra et libero. Sed faucibus sapien nisl, sit amet pellentesque lectus euismod et. Nam in odio placerat risus tempor faucibus. Duis pharetra magna vitae dui mattis, eget consequat felis fringilla. Suspendisse at finibus libero. Curabitur nec risus neque. Donec lacinia arcu id lectus tempus, vel condimentum nisl finibus. Pellentesque finibus quis libero et vestibulum. Vestibulum scelerisque diam sit amet elit porttitor, at semper elit venenatis.</p>
+<p>Vestibulum eros lacus, mollis a libero suscipit, fermentum auctor lectus. Nam mauris dolor, tempus non rhoncus vel, facilisis eleifend augue. In vulputate risus augue, in rutrum arcu consectetur facilisis. Duis ex lectus, pulvinar a dolor ut, aliquam interdum ipsum.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer mt-auto">
+<div class="footer_top">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Ukiyox</h4>
+<ul class="footer-content-links">
+<li><a href="explore.html" class="footer-link">Explore</a></li>
+<li><a href="about.html" class="footer-link">About</a></li>
+<li><a href="help_center.html" class="footer-link">Help Center</a></li>
+<li><a href="career-2.html" class="footer-link">Careers</a></li>
+<li><a href="how_it_works.html" class="footer-link">How It Works</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Community</h4>
+<ul class="footer-content-links">
+<li><a href="blogs.html" class="footer-link">Blog</a></li>
+<li><a href="uki_token.html" class="footer-link">Uki Token</a></li>
+<li><a href="suggest_features.html" class="footer-link">Suggest Features</a></li>
+<li><a href="subscribe.html" class="footer-link">Subscribe</a></li>
+<li><a href="voting.html" class="footer-link">Voting</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Join Ukiyox Community</h4>
+<div class="footer-social-links">
+<a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-discord"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-reddit"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-vk"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-tumblr-square"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-medium"></i></a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Download the Ukiyox app</h4>
+<div class="footer-download-links">
+<a href="#" class="download-btn">
+<img src="images/career/app-store.png" alt="">
+</a>
+<a href="#" class="download-btn">
+<img src="images/career/google-play.png" alt="">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_middle">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-4 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title txt-center">Get the latest Ukiyox updates</h4>
+<div class="footer-updates">
+<div class="subscribe-email-group">
+<input class="input-control" type="email" placeholder="Your e-mail">
+<button class="subscribe-btn btn-hover" type="submit">I'm in</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_bottom">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<ul class="footer_left">
+<li>
+<div class="footer_logo">
+<a href="index.html"><img src="images/footer_logo.svg" alt=""></a>
+</div>
+</li>
+<li>
+<p><i class="uil uil-copyright"></i> 2022 <strong>Ukiyox</strong>. All Rights Reserved.</p>
+</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul class="footer_bottom_links">
+<li>
+<a href="privacy_policy.html">Privacy Policy</a>
+</li>
+<li>
+<a href="terms.html">Terms</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/OwlCarousel/owl.carousel.js"></script>
+<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/dark-mode-switch.min.js"></script>
+</body>
+
+<!-- Mirrored from www.gambolthemes.net/html-items/ukiyox-demo-link/privacy_policy.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Nov 2022 07:26:58 GMT -->
+</html>

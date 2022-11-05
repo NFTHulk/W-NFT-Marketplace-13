@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<html lang="fr" class="h-100">
+
+<!-- Mirrored from www.gambolthemes.net/html-items/ukiyox-demo-link/blog_detail_view.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Nov 2022 07:26:45 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, shrink-to-fit=9">
+<meta name="description" content="Gambolthemes">
+<meta name="author" content="Gambolthemes">
+<title>UkiyoX - Create, sell or collect digital items secured with #blockchain</title>
+
+<link rel="icon" type="image/png" href="images/fav.png">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel='stylesheet'>
+<link href='vendor/unicons-2.0.1/css/unicons.css' rel='stylesheet'>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/dark-mode.css" rel="stylesheet">
+
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+</head>
+<body class="h-100">
+
+<div class="loader-container">
+<div class="loader-ripple">
+<div></div>
+<div></div>
+</div>
+</div>
+
+
+<div class="modal fade" id="passchangeModal" tabindex="-1" aria-labelledby="passchangeModalLabel" aria-modal="false" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="passchangeModalLabel">Change Password</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<div class="login-register-form">
+<div class="form-group position-relative">
+<label class="form-label">Current Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+<div class="form-group position-relative mt-4">
+<label class="form-label">New Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+<div class="form-group position-relative mt-4">
+<label class="form-label">Confirm Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+</div>
+<div class="pass-require">
+<span class="pass-require-title">Password requirements</span>
+<ul>
+<li>Must be at least 5 characters</li>
+<li>Must be fewer than 128 characters</li>
+<li>Must be different from email address</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn back-btn btn-hover h-40" data-bs-dismiss="modal">Back</button>
+<button class="btn main-btn btn-hover h-40" data-bs-dismiss="modal">Save</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-modal="false" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="signinModalLabel">Sign in to Ukiyox</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<div class="social-logins mt-0">
+<div class="row g-2">
+<div class="col-12">
+<button class="sign-social-btn sign-g-btn"><i class="fab fa-google"></i>Signin with Google</button>
+</div>
+<div class="col-4">
+<button class="sign-social-btn sign-f-btn"><i class="fab fa-facebook"></i></button>
+</div>
+<div class="col-4">
+<button class="sign-social-btn sign-t-btn"><i class="fab fa-twitter"></i></button>
+</div>
+<div class="col-4">
+<button class="sign-social-btn sign-a-btn"><i class="fab fa-linkedin-in"></i></button>
+</div>
+</div>
+</div>
+<div class="divider-line d-flex align-center">
+<hr class="v-divider line-color">
+<div class="or"><span>Or</span></div>
+<hr class="v-divider line-color">
+</div>
+<div class="login-register-form">
+<form>
+<div class="form-group position-relative">
+<input class="input-control" type="email" placeholder="Email Address">
+</div>
+<div class="form-group position-relative mt-3">
+<input class="input-control" type="password" placeholder="Password">
+</div>
+<button class="main-btn btn-hover w-100 h-40 mt-3" type="submit">Sign In</button>
+</form>
+<div class="sign-helpful-links">
+<a href="forgot_password.html" class="agent-link">I am an Agent</a>
+<a href="forgot_password.html" class="my-forgot-link">Forgot My Password?</a>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer justify-content-center">
+<div class="more-help-link">New to Ukiyox?<a href="#signupModal" role="button" data-bs-toggle="modal" data-bs-dismiss="modal">Sign up</a></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-modal="false" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="signupModalLabel">Sign up to Ukiyox</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<div class="login-register-form">
+<div class="sign-title mb-30">
+<p>Please fill out this form, and we'll send you a welcome email so you can verify your email address and sign in.</p>
+</div>
+<form>
+<div class="form-group position-relative">
+<input class="input-control" type="text" placeholder="Your Full Name">
+</div>
+<div class="form-group position-relative mt-3">
+<input class="input-control" type="email" placeholder="Email Address">
+</div>
+<button class="main-btn btn-hover w-100 h-40 mt-3" type="submit">Sign up</button>
+</form>
+</div>
+</div>
+</div>
+<div class="modal-footer justify-content-center">
+<div class="more-help-link">Already have account?<a href="#signinModal" role="button" data-bs-toggle="modal" data-bs-dismiss="modal">Sign in</a></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<header class="header clearfix">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="res_main_logo">
+<a href="index.html"><img src="images/footer_logo.svg" alt=""></a>
+</div>
+<div class="main_logo ms-0" id="logo">
+<a href="index.html"><img class="logo-main" src="images/logo.svg" alt=""></a>
+<a href="index.html"><img class="logo-inverse" src="images/dark_logo.svg" alt=""></a>
+</div>
+<div class="header_right ms-auto pe-0">
+<ul>
+<li></li>
+<li></li>
+<li>
+<a href="index.html" class="btn back--btn btn-hover me-2"><i class="uil uil-arrow-up-left me-1"></i>Back to home</a>
+</li>
+<li class="d-none">
+<a href="#signinModal" class="btn main-btn btn-hover me-3" role="button" data-bs-toggle="modal">Sign in</a>
+</li>
+<li class="dropdown">
+<a href="#" class="header-account" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+<span class="user-font">Joginer Singh</span>
+<img src="images/left-imgs/img-10.jpg" alt="avatar">
+</a>
+<ul class="dropdown-menu dropdown-menu-account dropdown-menu-end">
+<li><a class="dropdown-item" href="my_profile_detail_view_activity.html">My activities</a></li>
+<li><a class="dropdown-item" href="my_profile_detail_view.html">My profile</a></li>
+<li><a class="dropdown-item" href="#passchangeModal" role="button" data-bs-toggle="modal">Change password</a></li>
+<li>
+<div class="form-check form-switch">
+<label class="form-check-label" for="darkSwitch">Dark Mode</label>
+<input class="form-check-input" type="checkbox" id="darkSwitch">
+</div>
+</li>
+<li class="dropdown-menu-footer">
+<a class="dropdown-item text-center" href="sign_in.html">Sign out</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="new-wrapper d-flex flex-column h-100">
+<div class="sub-nav-group">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<nav class="sub-nav page-title-center">
+<div class="page-title">
+<h3>Blog</h3>
+</div>
+<ol class="breadcrumbs">
+<li><a href="career-2.html">Home</a></li>
+<li><a href="blogs.html">Blogs</a></li>
+<li aria-current="page">Blog detail View</li>
+</ol>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="our-blog-block">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-8 col-md-10">
+<div class="blog-view">
+<div class="blog-img-card p-0">
+<img src="images/blogs/blog-1.jpg" alt="">
+</div>
+<div class="blog-content blog-content-view">
+<span class="blog-tag">Guide</span>
+<h3>Welcome to Ukiyox</h3>
+<ul class="blogpost-meta">
+<li>
+<a href="#" class="author-dt-meta">
+<i class="uil uil-user me-1"></i>Ukiyox
+</a>
+</li>
+<li>
+<span class="post-time-meta">
+<i class="uil uil-calendar-alt me-1"></i>March 18, 2022
+</span>
+</li>
+</ul>
+<div class="blog-content-meta">
+<p>Phasellus venenatis posuere nibh, sit amet blandit lorem pharetra ac. Phasellus feugiat laoreet laoreet. Praesent eget ex condimentum, malesuada lectus vitae, porta nunc. Vestibulum nec venenatis magna, quis hendrerit justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla, ex sit amet sagittis blandit, justo mi faucibus elit, eget egestas est velit vel libero.</p>
+<div class="blog-description-article">
+<h5>Getting Started</h5>
+<p>Vestibulum non commodo quam. Morbi dignissim erat nisl, at euismod felis blandit a. Aenean nec sollicitudin turpis, sit amet cursus orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed non mauris nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus pretium, lacus quis bibendum accumsan, erat magna ullamcorper libero, quis venenatis turpis neque eget magna.</p>
+<p>Fusce non tortor eros. Quisque tristique tincidunt ullamcorper. Mauris sed sem posuere, varius nibh in, volutpat nisl. Integer ipsum quam, tristique sed ligula vel, tincidunt aliquam dui. Mauris porta vel odio eget aliquam. Suspendisse ultrices leo sit amet erat facilisis porta.</p>
+</div>
+<div class="blog-description-article">
+<h5>Choosing Your Wallet</h5>
+<p>Integer blandit elit nibh, sit amet dignissim ligula volutpat sed. Donec consequat luctus nibh a posuere. Fusce vitae commodo neque. Vivamus tempor augue id lorem bibendum finibus. Praesent mauris ante, laoreet ut semper nec, laoreet ac augue. Suspendisse venenatis nisi tellus, at mattis velit tincidunt vitae. </p>
+<p>Nunc viverra eleifend sapien ac blandit. Nam id elit tempor, tempor ante at, euismod nisl. Nullam ante lectus, luctus eget porttitor ut, dignissim non urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut turpis quam, porttitor vel vestibulum ut, venenatis non eros. In hac habitasse platea dictumst.</p>
+</div>
+<div class="blog-description-article">
+<h5>Getting Ether</h5>
+<p>Phasellus posuere nisi quis neque lobortis, vitae aliquet dolor gravida. Pellentesque scelerisque dui felis. Fusce rutrum congue dignissim. Phasellus commodo auctor efficitur. Pellentesque ut aliquam quam. Ut mi odio, aliquet quis felis at, semper rhoncus felis. Vestibulum sollicitudin ultrices turpis quis volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse mollis, quam non lobortis varius, quam enim tempus enim, ut porta lorem lacus sit amet nulla. Donec ut suscipit augue, id fringilla mauris. Duis egestas augue sem, vitae ornare quam facilisis quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vel ex facilisis, interdum felis vitae, imperdiet eros.</p>
+</div>
+<div class="blog-description-article">
+<h5>Searching for Items</h5>
+<p>Vestibulum non commodo quam. Morbi dignissim erat nisl, at euismod felis blandit a. Aenean nec sollicitudin turpis, sit amet cursus orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce non tortor eros. Quisque tristique tincidunt ullamcorper. Mauris sed sem posuere, varius nibh in, volutpat nisl. Integer ipsum quam, tristique sed ligula vel, tincidunt aliquam dui. Mauris porta vel odio eget aliquam. Suspendisse ultrices leo sit amet erat facilisis porta. Sed non mauris nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus pretium, lacus quis bibendum accumsan, erat magna ullamcorper libero, quis venenatis turpis neque eget magna.</p>
+</div>
+<div class="blog-description-article">
+<h5>Bidding on Auctions</h5>
+<p>Morbi lectus nunc, lacinia ut consequat a, semper vel erat. Duis ut lacus nec dui sodales mattis. Mauris tellus dolor, pulvinar sit amet pretium a, malesuada sed tellus. Aliquam ultrices elit neque, quis lacinia ex porttitor non. Donec ac iaculis turpis. Nulla lacinia enim quis orci aliquam, non cursus urna pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus in mi a nisi auctor interdum.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="blog_pagination">
+<a href="#" class="bp_left">
+<i class="uil uil-angle-double-left"></i>
+<div class="kslu15">
+<div class="prevlink">Previous</div>
+<div class="prev_title">Introducing the Ukiyox mobile app</div>
+</div>
+</a>
+<a href="#" class="bp_right">
+<div class="kslu16">
+<div class="prevlink1">Next</div>
+<div class="prev_title1">How to Easily Setup a MetaMask Wallet</div>
+</div>
+<i class="uil uil-angle-double-right"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer mt-auto">
+<div class="footer_top">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Ukiyox</h4>
+<ul class="footer-content-links">
+<li><a href="explore.html" class="footer-link">Explore</a></li>
+<li><a href="about.html" class="footer-link">About</a></li>
+<li><a href="help_center.html" class="footer-link">Help Center</a></li>
+<li><a href="career-2.html" class="footer-link">Careers</a></li>
+<li><a href="how_it_works.html" class="footer-link">How It Works</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Community</h4>
+<ul class="footer-content-links">
+<li><a href="blogs.html" class="footer-link">Blog</a></li>
+<li><a href="uki_token.html" class="footer-link">Uki Token</a></li>
+<li><a href="suggest_features.html" class="footer-link">Suggest Features</a></li>
+<li><a href="subscribe.html" class="footer-link">Subscribe</a></li>
+<li><a href="voting.html" class="footer-link">Voting</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Join Ukiyox Community</h4>
+<div class="footer-social-links">
+<a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-discord"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-reddit"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-vk"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-tumblr-square"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-medium"></i></a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Download the Ukiyox app</h4>
+<div class="footer-download-links">
+<a href="#" class="download-btn">
+<img src="images/career/app-store.png" alt="">
+</a>
+<a href="#" class="download-btn">
+<img src="images/career/google-play.png" alt="">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_middle">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-4 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title txt-center">Get the latest Ukiyox updates</h4>
+<div class="footer-updates">
+<div class="subscribe-email-group">
+<input class="input-control" type="email" placeholder="Your e-mail">
+<button class="subscribe-btn btn-hover" type="submit">I'm in</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_bottom">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<ul class="footer_left">
+<li>
+<div class="footer_logo">
+<a href="index.html"><img src="images/footer_logo.svg" alt=""></a>
+</div>
+</li>
+<li>
+<p><i class="uil uil-copyright"></i> 2022 <strong>Ukiyox</strong>. All Rights Reserved.</p>
+</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul class="footer_bottom_links">
+<li>
+<a href="privacy_policy.html">Privacy Policy</a>
+</li>
+<li>
+<a href="terms.html">Terms</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/OwlCarousel/owl.carousel.js"></script>
+<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/dark-mode-switch.min.js"></script>
+</body>
+
+<!-- Mirrored from www.gambolthemes.net/html-items/ukiyox-demo-link/blog_detail_view.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Nov 2022 07:26:45 GMT -->
+</html>

@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<!-- Mirrored from www.gambolthemes.net/html-items/ukiyox-demo-link/how_it_works.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Nov 2022 07:26:46 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, shrink-to-fit=9">
+<meta name="description" content="Gambolthemes">
+<meta name="author" content="Gambolthemes">
+<title>UkiyoX - Create, sell or collect digital items secured with #blockchain</title>
+
+<link rel="icon" type="image/png" href="images/fav.png">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel='stylesheet'>
+<link href='vendor/unicons-2.0.1/css/unicons.css' rel='stylesheet'>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/dark-mode.css" rel="stylesheet">
+
+<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+<link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+</head>
+<body class="h-100">
+
+<div class="loader-container">
+<div class="loader-ripple">
+<div></div>
+<div></div>
+</div>
+</div>
+
+
+<div class="modal fade" id="passchangeModal" tabindex="-1" aria-labelledby="passchangeModalLabel" aria-modal="false" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="passchangeModalLabel">Change Password</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<div class="login-register-form">
+<div class="form-group position-relative">
+<label class="form-label">Current Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+<div class="form-group position-relative mt-4">
+<label class="form-label">New Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+<div class="form-group position-relative mt-4">
+<label class="form-label">Confirm Password*</label>
+<input class="input-control" type="password" placeholder="">
+</div>
+</div>
+<div class="pass-require">
+<span class="pass-require-title">Password requirements</span>
+<ul>
+<li>Must be at least 5 characters</li>
+<li>Must be fewer than 128 characters</li>
+<li>Must be different from email address</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn back-btn btn-hover h-40" data-bs-dismiss="modal">Back</button>
+<button class="btn main-btn btn-hover h-40" data-bs-dismiss="modal">Save</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-modal="false" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="signinModalLabel">Sign in to Ukiyox</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<div class="social-logins mt-0">
+<div class="row g-2">
+<div class="col-12">
+<button class="sign-social-btn sign-g-btn"><i class="fab fa-google"></i>Signin with Google</button>
+</div>
+<div class="col-4">
+<button class="sign-social-btn sign-f-btn"><i class="fab fa-facebook"></i></button>
+</div>
+<div class="col-4">
+<button class="sign-social-btn sign-t-btn"><i class="fab fa-twitter"></i></button>
+</div>
+<div class="col-4">
+<button class="sign-social-btn sign-a-btn"><i class="fab fa-linkedin-in"></i></button>
+</div>
+</div>
+</div>
+<div class="divider-line d-flex align-center">
+<hr class="v-divider line-color">
+<div class="or"><span>Or</span></div>
+<hr class="v-divider line-color">
+</div>
+<div class="login-register-form">
+<form>
+<div class="form-group position-relative">
+<input class="input-control" type="email" placeholder="Email Address">
+</div>
+<div class="form-group position-relative mt-3">
+<input class="input-control" type="password" placeholder="Password">
+</div>
+<button class="main-btn btn-hover w-100 h-40 mt-3" type="submit">Sign In</button>
+</form>
+<div class="sign-helpful-links">
+<a href="forgot_password.html" class="agent-link">I am an Agent</a>
+<a href="forgot_password.html" class="my-forgot-link">Forgot My Password?</a>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer justify-content-center">
+<div class="more-help-link">New to Ukiyox?<a href="#signupModal" role="button" data-bs-toggle="modal" data-bs-dismiss="modal">Sign up</a></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-modal="false" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="signupModalLabel">Sign up to Ukiyox</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="convert-form">
+<div class="login-register-form">
+<div class="sign-title mb-30">
+<p>Please fill out this form, and we'll send you a welcome email so you can verify your email address and sign in.</p>
+</div>
+<form>
+<div class="form-group position-relative">
+<input class="input-control" type="text" placeholder="Your Full Name">
+</div>
+<div class="form-group position-relative mt-3">
+<input class="input-control" type="email" placeholder="Email Address">
+</div>
+<button class="main-btn btn-hover w-100 h-40 mt-3" type="submit">Sign up</button>
+</form>
+</div>
+</div>
+</div>
+<div class="modal-footer justify-content-center">
+<div class="more-help-link">Already have account?<a href="#signinModal" role="button" data-bs-toggle="modal" data-bs-dismiss="modal">Sign in</a></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<header class="header clearfix">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="res_main_logo">
+<a href="index.html"><img src="images/footer_logo.svg" alt=""></a>
+</div>
+<div class="main_logo ms-0" id="logo">
+<a href="index.html"><img class="logo-main" src="images/logo.svg" alt=""></a>
+<a href="index.html"><img class="logo-inverse" src="images/dark_logo.svg" alt=""></a>
+</div>
+<div class="header_right ms-auto pe-0">
+<ul>
+<li></li>
+<li></li>
+<li>
+<a href="index.html" class="btn back--btn btn-hover me-2"><i class="uil uil-arrow-up-left me-1"></i>Back to home</a>
+</li>
+<li class="d-none">
+<a href="#signinModal" class="btn main-btn btn-hover me-3" role="button" data-bs-toggle="modal">Sign in</a>
+</li>
+<li class="dropdown">
+<a href="#" class="header-account" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+<span class="user-font">Joginer Singh</span>
+<img src="images/left-imgs/img-10.jpg" alt="avatar">
+</a>
+<ul class="dropdown-menu dropdown-menu-account dropdown-menu-end">
+<li><a class="dropdown-item" href="my_profile_detail_view_activity.html">My activities</a></li>
+<li><a class="dropdown-item" href="my_profile_detail_view.html">My profile</a></li>
+<li><a class="dropdown-item" href="#passchangeModal" role="button" data-bs-toggle="modal">Change password</a></li>
+<li>
+<div class="form-check form-switch">
+<label class="form-check-label" for="darkSwitch">Dark Mode</label>
+<input class="form-check-input" type="checkbox" id="darkSwitch">
+</div>
+</li>
+<li class="dropdown-menu-footer">
+<a class="dropdown-item text-center" href="sign_in.html">Sign out</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<div class="new-wrapper d-flex flex-column h-100">
+<div class="sub-nav-group">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<nav class="sub-nav page-title-center">
+<div class="page-title">
+<h3>How it works</h3>
+</div>
+<ol class="breadcrumbs">
+<li title="Ukiyox">
+<a href="index.html">Ukiyox</a>
+</li>
+<li title="How it works">
+<a href="#">How it works</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="works-block">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-12">
+<div class="main-card">
+<div class="action-title">
+<h4 class="item-title mb-0">How it works</h4>
+</div>
+<div class="works-tabs">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+<li class="nav-item" role="presentation">
+<button class="nav-link active" id="getting-started-tab" data-bs-toggle="tab" data-bs-target="#getting-started" type="button" role="tab" aria-controls="getting-started" aria-selected="true">Getting started</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" id="using-ukiyox-tab" data-bs-toggle="tab" data-bs-target="#using-ukiyox" type="button" role="tab" aria-controls="using-ukiyox" aria-selected="false">Using Ukiyox</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" id="safety-policies-tab" data-bs-toggle="tab" data-bs-target="#safety-policies" type="button" role="tab" aria-controls="safety-policies" aria-selected="false">Safety, Security, and Policies</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" id="troubleshooting-tab" data-bs-toggle="tab" data-bs-target="#troubleshooting" type="button" role="tab" aria-controls="troubleshooting" aria-selected="false">Troubleshooting</button>
+</li>
+</ul>
+</div>
+</div>
+<div class="main-card mt-30 sm-hide">
+<div class="help-link-block">
+<h4>Can’t find your answer?</h4>
+<p>Contact us and we’ll get back to you as soon as we can.</p>
+<a href="help_center.html" class="btn main-btn btn-hover h-40">Help Center</a>
+</div>
+</div>
+</div>
+<div class="col-lg-8 col-md-12">
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade show active" id="getting-started" role="tabpanel" aria-labelledby="getting-started-tab">
+<div class="main-card rmt-30 rrmt-30">
+<div class="top-title">
+<h1 class="article-title-view">
+Getting started
+</h1>
+</div>
+<div class="works-links">
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>What is an NFT?</h4>
+<p>NFTs prove ownership of a unique digital asset like art, music, collectibles, videos or anything else with blockchain technology...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>What are Proof of Work (PoW) and Proof of Stake (PoS) blockchains?</h4>
+<p>We’re almost done with the technical terms, just bear with us for a moment here! These two “consensus mechanisms” are different ways blockchains validate transactions...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>What is a wallet? Why do I need one?</h4>
+<p>Your physical wallet probably contains your money, a form of ID, and maybe pictures of your loved ones (we’ll ignore that 3 year-old Starbuck’s membership card with $1.83 on it). Your crypto wallet does that on a blockchain...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>How much does it cost to create an NFT?</h4>
+<p>You’re ready to turn your creations into NFTs? Amazing! When you first create an NFT, you “mint” it with a few clicks—which might mean you have to pay a fee to the network (none of this goes to Ukiyox)...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>Are Ethereum gas fees always so high?</h4>
+<p>Ethereum gas fees vary according to supply and demand. But, like avoiding the highway during rush hour, you can mint, buy or sell when gas is lower. We’ve built a tool for you to see...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>How do I create my first NFT on Ukiyox?</h4>
+<p>Click Create in the top right corner of the Ukiyox homepage to get started. We delist all stolen art, so listing art you don’t own only leaves you paying gas and making nothing...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>How do I buy my first NFT on Ukiyox?</h4>
+<p>So you saw an NFT you can’t resist anymore? Here’s how to make it yours: Click on the piece you want to own. The page will list some details...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>Can I pay with a credit card on Ukiyox?</h4>
+<p>Yes, but not always. You can buy fixed price listings with your credit card and never have to buy cryptocurrency...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>What makes Ukiyox different from other NFT marketplaces?</h4>
+<p>Wait, Ukiyox is NOT the only marketplace out there? When did that happen? Ok, kidding. But here’s a few reasons you might love Ukiyox...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>What are Ukiyox’s fees?</h4>
+<p>Ukiyox takes 2.5% on the buyer side and 2.5% on the seller side...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>I am new to NFTs. Where can I learn about them?</h4>
+<p>Follow us on Twitter, join our Discord and browse our blog for cool educational content...</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="using-ukiyox" role="tabpanel" aria-labelledby="using-ukiyox-tab">
+<div class="main-card rmt-30 rrmt-30">
+<div class="top-title">
+<h1 class="article-title-view">
+Using Ukiyox
+</h1>
+</div>
+<div class="works-links">
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>Which blockchains does Ukiyox support?</h4>
+<p>Ukiyox is a multichain marketplace, meaning you can buy, mint and sell NFTs on multiple blockchains. The Web3 space has no bounds, so neither do we...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>Why should I use Ethereum on Ukiyox?</h4>
+<p>Ethereum is by far the most popular blockchain for NFTs. It has the biggest community and hosts the most NFTs of any blockchain. Most of the record-setting NFT...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>Why should I use Flow on Ukiyox?</h4>
+<p>The Flow blockchain is tailor-made for digital collectibles. That’s why it’s super efficient for NFTs: Minting only costs a fraction of a cent (and Ukiyox pays it for you) — so it’s effectively free to get started...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>Why should I use Tezos on Ukiyox?</h4>
+<p>As a proof-of-stake blockchain, Tezos has low fees, high performance and a smaller carbon footprint than proof-of-work blockchains. This has attracted a vibrant scene of diverse NFT artists ...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>How do I sell my NFT on Ukiyox?</h4>
+<p>Your first NFT sale might become a life-changing memory, so we’re happy you want us to be part of it! Once you mint your NFT on Ukiyox, you can press “sell”. Then you have three options...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>I see users with the yellow checkmark next to their profile. What does that mean?</h4>
+<p>The yellow checkmark next to your profile means you’re verified on Ukiyox.com. That doesn’t only get you coolness points for belonging...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>I want this yellow badge too! How do I get verified?</h4>
+<p>We’d love to have you join the fam! Unlike social media, you don’t need hundreds of thousands of followers to get verified...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>What do the small circles at the top of listed NFTs mean?</h4>
+<p>Basically, it’s ownership data for each NFT. These circles are easy to read once you get the hang of it! When you hover over those circles, you’ll find out about three different kinds of information...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>If I mint NFTs on Ukiyox, will I get royalties on secondary sales?</h4>
+<p>Yes! We’re not forcing you to get secondary royalties, but earning off of every resale is a sweet deal for artists! As a creator, you can choose your royalties when you mint your NFT...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>I’ve already minted my collection on another marketplace. Can I relist it on Ukiyox to get royalties on secondary sales?</h4>
+<p>Yes, we’ve got you covered! You can list your existing collection on Ukiyox.com and add...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>What is a $UKI token and how is it distributed?</h4>
+<p>$UKI token is the native governance token of the Ukiyox Protocol – an open-source cross-chain protocol, governed by the community...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>There’s an NFT I want to send to my friend as a gift. How do I do that?</h4>
+<p>As long as you’ve got their wallet address, you can make your friends smile by sending them an NFT...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>Can I hide NFTs from my profile on Ukiyox?</h4>
+<p>Of course. You’re entitled to have as many skeletons (or apes) in your closet as you want. Go to your profile, see the NFT you’d like to hide and click on the ellipsis...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>I heard that NFTs are bad for the environment. What’s your stance on this?</h4>
+<p>Unfortunately, many blockchains consume a lot of energy—especially proof-of-work ones, including Ethereum. If we could, we’d wave a magic wand to fix that problem....</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="safety-policies" role="tabpanel" aria-labelledby="safety-policies-tab">
+<div class="main-card rmt-30 rrmt-30">
+<div class="top-title">
+<h1 class="article-title-view">
+Safety, Security, and Policies
+</h1>
+</div>
+<div class="works-links">
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>Is connecting my wallet to Ukiyox secure?</h4>
+<p>Short answer: yes, but only as long as you don’t do something to compromise it. Most of the time bad actors won’t try to hack your wallet per se (because it’s pretty much impossible to brute force it), but will look for other ways to access it...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>I bought an NFT from someone, but I think I was scammed. What happened?</h4>
+<p>Always do due diligence between buying into an NFT, and keep in mind that anything you buy might become...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>My verification request was rejected. Can I reapply?</h4>
+<p>We process each verification request one by one, which means that we have a specific reason for rejecting e</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>What are your community rules and guidelines?</h4>
+<p>In order for Ukiyox to operate as a community-driven marketplace, we rely on our users to follow ethical practices. Ukiyox never condones hate speech, general illegal behavior, violent rhetoric, spam or fraudulence of any kind...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>Where can I find Ukiyox’s terms and conditions?</h4>
+<p>Ukiyox’s terms and conditions can be found at the very bottom of any Ukiyox page. They can also be found...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>What is Ukiyox’s privacy policy?</h4>
+<p>Ukiyox’s privacy policy can be found at the very bottom of any Rarible page. It can also be found...</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="troubleshooting" role="tabpanel" aria-labelledby="troubleshooting-tab">
+<div class="main-card rmt-30 rrmt-30">
+<div class="top-title">
+<h1 class="article-title-view">
+Troubleshooting
+</h1>
+</div>
+<div class="works-links">
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>I should have received $UKI, but I didn’t. How do I claim it?</h4>
+ <p>If you’re confident you qualify for $UKI but didn’t receive any in the weekly drop, please file a request with our support team here...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>I think I minted duplicate NFTs. Is that even possible?</h4>
+<p>What’s better than an NFT? 2 NFTs! But you don't always want to mint 2 NFTs of the same artwork. Unfortunately, it can happen by accident...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>The Ukiyox website isn’t working properly. Now what?</h4>
+<p>Is our site or your profile not loading? Are you having issues when you try to create, buy, or sell NFTs? What about missing prompts and notifications? Try completing the following...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>I think my NFT disappeared from Ukiyox. Why?</h4>
+<p>NFTs are decentralized and stored on the blockchain forever — so you might be surprised to see an NFT vanish from Ukiyox. Don’t worry, Ukiyox can’t take anything out of your wallet or remove NFTs from any blockchain...</p>
+</div>
+</a>
+<a href="#" class="w-item-link">
+<div class="w-item-link-text">
+<h4>I can’t see the artwork on my NFT’s Ukiyox listing, what’s wrong?</h4>
+<p>Can't see the artwork on your NFT?</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="main-card mt-30 lg-hide">
+<div class="help-link-block">
+<h4>Can’t find your answer?</h4>
+<p>Contact us and we’ll get back to you as soon as we can.</p>
+<a href="#" class="btn main-btn btn-hover h-40">Help Center</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer mt-auto">
+<div class="footer_top">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Ukiyox</h4>
+<ul class="footer-content-links">
+<li><a href="explore.html" class="footer-link">Explore</a></li>
+<li><a href="about.html" class="footer-link">About</a></li>
+<li><a href="help_center.html" class="footer-link">Help Center</a></li>
+<li><a href="career-2.html" class="footer-link">Careers</a></li>
+<li><a href="how_it_works.html" class="footer-link">How It Works</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Community</h4>
+<ul class="footer-content-links">
+<li><a href="blogs.html" class="footer-link">Blog</a></li>
+<li><a href="uki_token.html" class="footer-link">Uki Token</a></li>
+<li><a href="suggest_features.html" class="footer-link">Suggest Features</a></li>
+<li><a href="subscribe.html" class="footer-link">Subscribe</a></li>
+<li><a href="voting.html" class="footer-link">Voting</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Join Ukiyox Community</h4>
+<div class="footer-social-links">
+<a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-discord"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-reddit"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-vk"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-tumblr-square"></i></a>
+<a href="#" class="social-link"><i class="fa-brands fa-medium"></i></a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title">Download the Ukiyox app</h4>
+<div class="footer-download-links">
+<a href="#" class="download-btn">
+<img src="images/career/app-store.png" alt="">
+</a>
+<a href="#" class="download-btn">
+<img src="images/career/google-play.png" alt="">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_middle">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-4 col-md-6">
+<div class="footer-content">
+<h4 class="footer-title txt-center">Get the latest Ukiyox updates</h4>
+<div class="footer-updates">
+<div class="subscribe-email-group">
+<input class="input-control" type="email" placeholder="Your e-mail">
+<button class="subscribe-btn btn-hover" type="submit">I'm in</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_bottom">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<ul class="footer_left">
+<li>
+<div class="footer_logo">
+<a href="index.html"><img src="images/footer_logo.svg" alt=""></a>
+</div>
+</li>
+<li>
+<p><i class="uil uil-copyright"></i> 2022 <strong>Ukiyox</strong>. All Rights Reserved.</p>
+</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul class="footer_bottom_links">
+<li>
+<a href="privacy_policy.html">Privacy Policy</a>
+</li>
+<li>
+<a href="terms.html">Terms</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/OwlCarousel/owl.carousel.js"></script>
+<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/dark-mode-switch.min.js"></script>
+</body>
+
+<!-- Mirrored from www.gambolthemes.net/html-items/ukiyox-demo-link/how_it_works.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Nov 2022 07:26:46 GMT -->
+</html>
